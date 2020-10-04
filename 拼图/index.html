@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>拼图小游戏</title>
+    <script src="./index.js"></script>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    ul {
+        padding-top: 2px;
+        position: relative;
+        background-color: lemonchiffon;
+        width: 308px;
+        height: 308px;
+        border: 1px solid black;
+        border-radius: 4px;
+        margin: 100px auto;
+        display: none;
+    }
+    
+    ul li {
+        width: 100px;
+        height: 100px;
+        background-image: url(./timg.jpg);
+        float: left;
+        list-style: none;
+        margin: 0 0 2px 2px;
+        transition: .2s;
+    }
+    
+    ul .active {
+        background: lemonchiffon!important;
+    }
+    
+    .startGame {
+        cursor: pointer;
+        border: 1px solid black;
+        text-align: center;
+        padding: 3px;
+        font-size: 15px;
+        margin: 100px auto;
+        width: 70px;
+    }
+    
+    img {
+        margin: 100px auto;
+        display: block;
+    }
+</style>
+
+<body>
+    <img src="./timg.jpg" alt="">
+    <div class="startGame">开始游戏</div>
+    <ul class="game">
+        <!-- <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li class="active"></li> -->
+    </ul>
+</body>
+
+</html>
